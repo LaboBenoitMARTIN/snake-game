@@ -1,0 +1,76 @@
+/* Reset minimal + theme sombre */
+:root {
+  --color-bg: #0a0a0a;
+  --color-bg-alt: #1a1a1a;
+  --color-text: #e0e0e0;
+  --color-text-muted: #9a9a9a;
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-border: #262626;
+  --radius: 8px;
+  --font-main: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.game__title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.game__score {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.game__board {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 100%;
+  height: auto;
+}
+
+.game__hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--color-primary);
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-dark);
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="game">
+    <h1 class="game__title">🐍 Snake</h1>
+    <p class="game__score">Score : <span id="score">0</span> — Meilleur score : <span id="best-score">0</span></p>
+    <canvas id="board" class="game__board" width="400" height="400"></canvas>
+    <p class="game__hint">Flèches directionnelles (ou Z Q S D) pour diriger le serpent.</p>
+    <button id="restart" class="btn" hidden>Rejouer</button>
+  </main>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
